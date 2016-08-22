@@ -40,7 +40,7 @@ public class IdentityServlet extends HttpServlet {
 
     /**
      * 生成4位随机数组合 getRandomString
-     * @return
+     * @return buffer.toString()
      */
     protected static String getRandomString(){
         StringBuffer buffer;
