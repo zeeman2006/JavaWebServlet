@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <script>
+                function reloadImage() {
+                    document.getElementById('btn').disabled = true;
+                    document.getElementById('identity').src = '/JavaWebServlet/IdentityServlet?ts='+ new Date().getTime();
+                }
+                </script>
+            <img src="/JavaWebServlet/IdentityServlet" id="identity" onload = "btn.disabled = false;" />
+            <input type="button" value="换个图片" onclick="reloadImage()" id="btn" />
+
+        </div>
+    </body>
+</html>
